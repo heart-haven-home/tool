@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7fb">
+  <meta name="description" content="HeartHaven is a warm, LGBTQ+-affirming space for emotional well-being and self-acceptance.">
+  <title>HeartHaven 🌸 — A space to be heard</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-row">
+        <div class="brand-mark" aria-hidden="true">♡</div>
+        <div><div class="brand-name">HeartHaven</div><div class="brand-tag">A softer place to land</div></div>
+      </div>
+
+      <button class="new-chat" id="new-chat" type="button"><span>＋</span> New conversation</button>
+
+      <section class="side-card">
+        <h2><span>🌈</span> Helplines</h2>
+        <div class="resource-item"><div><strong>Trevor Project · US</strong><span>Call 1-866-488-7386</span></div><a href="https://www.thetrevorproject.org/get-help/" target="_blank" rel="noopener noreferrer" aria-label="Trevor Project support options">↗</a></div>
+        <div class="resource-item"><div><strong>Samaritans · UK & ROI</strong><span>Call 116 123</span></div><a href="https://www.samaritans.org/how-we-can-help/contact-samaritan/" target="_blank" rel="noopener noreferrer" aria-label="Contact Samaritans">↗</a></div>
+        <div class="resource-item"><div><strong>AASRA · India</strong><span>Call +91 9820466726</span></div><a href="https://www.aasra.info/" target="_blank" rel="noopener noreferrer" aria-label="AASRA support website">↗</a></div>
+      </section>
+
+      <section class="side-card">
+        <h2><span>🪷</span> Gentle resets</h2>
+        <a class="simple-link" href="https://www.youtube.com/watch?v=inpok4MKVLM" target="_blank" rel="noopener noreferrer">Mindfulness meditation <span>↗</span></a>
+        <a class="simple-link" href="https://www.youtube.com/watch?v=30VMIEmA114" target="_blank" rel="noopener noreferrer">Grounding exercise <span>↗</span></a>
+      </section>
+
+      <section class="side-card founder-card">
+        <h2><span>✦</span> About the founder</h2>
+        <p><strong>Naytik Jain</strong> created HeartHaven to make emotional support feel more accessible, inclusive, and affirming. Everyone deserves a space where they can be heard.</p>
+        <p class="founder-quote">“Every heart, no matter its journey, deserves a place to feel understood.”</p>
+      </section>
+
+      <div class="sidebar-foot"><span class="online-dot"></span> A space for LGBTQ+ well-being</div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" type="button" aria-label="Open resources menu">☰</button>
+        <div class="topbar-label"><span class="status-dot"></span> Your affirming space</div>
+        <div class="privacy-label" title="Messages are kept in this browser tab only">⌁ Session-only chat</div>
+      </header>
+
+      <section class="chat-area" id="chat-area" aria-live="polite">
+        <div class="welcome" id="welcome">
+          <div class="welcome-orb" aria-hidden="true"><span>♡</span><i>✦</i></div>
+          <div class="eyebrow">YOU BELONG HERE</div>
+          <h1>A little more room<br>to <em>be yourself.</em></h1>
+          <p class="welcome-copy">Whatever today feels like, you don't have to sort through it all at once. I'm here to listen, without judgment.</p>
+          <div class="prompt-heading">What would feel helpful right now?</div>
+          <div class="prompt-grid">
+            <button class="prompt-card" data-prompt="Can you help me cope with anxiety?"><span class="prompt-icon lavender">✧</span><span><strong>Find a little calm</strong><small>When anxiety feels loud</small></span><span class="prompt-arrow">↗</span></button>
+            <button class="prompt-card" data-prompt="I feel misunderstood. What should I do?"><span class="prompt-icon peach">♡</span><span><strong>Feel understood</strong><small>When others don't get it</small></span><span class="prompt-arrow">↗</span></button>
+            <button class="prompt-card" data-prompt="How can I feel more confident about my identity?"><span class="prompt-icon mint">✿</span><span><strong>Build self-acceptance</strong><small>At your own pace</small></span><span class="prompt-arrow">↗</span></button>
+            <button class="prompt-card" data-prompt="Give me one gentle self-care tip for today."><span class="prompt-icon rose">☼</span><span><strong>Try a gentle reset</strong><small>One small step for today</small></span><span class="prompt-arrow">↗</span></button>
+          </div>
+        </div>
+        <div class="messages" id="messages"></div>
+      </section>
+
+      <div class="composer-wrap">
+        <div class="composer" id="composer">
+          <textarea id="message-input" rows="1" maxlength="4000" placeholder="Share what's on your mind… 💌" aria-label="Your message"></textarea>
+          <button id="send-button" class="send-button" type="button" aria-label="Send message"><span>↑</span></button>
+        </div>
+        <div class="composer-bottom"><span>Take your time. You can share as much or as little as you like.</span><span id="char-count">0 / 4000</span></div>
+        <p class="disclaimer">HeartHaven offers supportive conversation, not professional therapy or emergency care. If you're in immediate danger, contact local emergency services or someone you trust.</p>
+      </div>
+    </main>
+  </div>
+  <div class="mobile-scrim" id="mobile-scrim"></div>
+  <script src="./app.js"></script>
+</body>
+</html>

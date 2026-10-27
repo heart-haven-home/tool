@@ -3,7 +3,7 @@
  * Set API_URL to your deployed Worker URL before publishing.
  * Never put your Groq API key in this file.
  */
-const API_URL = "PASTE_YOUR_CLOUDFLARE_WORKER_URL_HERE";
+const API_URL = "hearthaven-chat-api.naytikjain9654.workers.dev";
 
 
 const messagesEl = document.getElementById("messages");
